@@ -15,9 +15,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-cluster-management.io/zh/community/releases/</guid>
-      <description>Open Cluster Management has approximately a three to four month release cycle. The current release is v0.5.0. Continue reading to view upcoming releases:
-v0.7.0, on 25th, March 2022 v0.6.0, on 21st, January 2022 The Open Cluster Management team is proud to announce the release of OCM v0.6.0! We made many enhancements on core components and introduced some new addons.
- First release of cluster-proxy addon, Cluster-Proxy addon is to provide a reverse tunnel from the managed cluster to the hub using apiserver-network-proxy, so user can easily visit the apiserver of the managedcluster from the hub without complicated infrstructure configuration.</description>
+      <description>Open Cluster Management has approximately a three to four month release cycle. The current release is v0.7.0. Continue reading to view upcoming releases:
+v0.7.0, on 6th, April 2022 The Open Cluster Management team is exicted to announce the release of OCM v0.7.0! We mainly focused on enhancing user experience in this release by introducing a bunch of new commands in clusteradm. Notable changes including:
+ APIs including placement, placementdecision, managedclusterset and managedclustersetbinding are upgraded to v1beta1, v1alpha1 version of these APIs are deprecated and will be removed in the next release.</description>
     </item>
     
     <item>
@@ -68,7 +68,7 @@ The original cluster model in OCM &amp;ldquo;Managed Cluster&amp;rdquo; is desig
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-cluster-management.io/zh/getting-started/administration/upgrading/</guid>
-      <description>Before you begin Upgrade command-line tool Manual Upgrade  Hub Cluster  Upgrading the registration-operator Upgrading the core components   Managed Clusters  Upgrading the registration-operator Upgrading the agent components Confirm the upgrade         This page provides the suggested steps to upgrade your OCM environment including both the hub cluster and the managed clusters. Overall the major steps you should follow are:</description>
+      <description>Before you begin Upgrade command-line tool Upgrade OCM Components via Command-line tool  Hub Cluster Managed Clusters   Upgrade OCM Components via Manual Edit  Hub Cluster  Upgrading the registration-operator Upgrading the core components   Managed Clusters  Upgrading the registration-operator Upgrading the agent components Confirm the upgrade         This page provides the suggested steps to upgrade your OCM environment including both the hub cluster and the managed clusters.</description>
     </item>
     
     <item>
@@ -111,7 +111,7 @@ Ensure golang is installed, if you are planning to install from the source.</des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-cluster-management.io/zh/concepts/managedcluster/</guid>
-      <description>What is ManagedCluster?  Cluster registration and acceptance  Bootstrapping registration Approving registration   Cluster heartbeats and status Cluster taints and tolerations  Taints of ManagedClusters Tolerations of Placements   Cluster removal  Unregister from hub cluster Unregister from the managed cluster     ManagedClusterSet     What is ManagedCluster? ManagedCluster is a cluster scoped API in the hub cluster representing the registered or pending-for-acceptance Kubernetes clusters in OCM.</description>
+      <description>What is ManagedCluster?  Cluster registration and acceptance  Bootstrapping registration Approving registration   Cluster heartbeats and status Cluster taints and tolerations  Taints of ManagedClusters Tolerations of Placements   Cluster removal  Unregister from hub cluster Unregister from the managed cluster     Managed Cluster&amp;rsquo;s certificate rotation What&amp;rsquo;s next?     What is ManagedCluster? ManagedCluster is a cluster scoped API in the hub cluster representing the registered or pending-for-acceptance Kubernetes clusters in OCM.</description>
     </item>
     
     <item>
@@ -147,7 +147,7 @@ Ensure golang is installed, if you are planning to install from the source.</des
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-cluster-management.io/zh/concepts/addon/</guid>
-      <description>What is an add-on? Open-cluster-management has a mechanism to help developers to develop an extension based on the foundation components for the purpose of working with multiple clusters in various asepcts. Examples of add-ons includes:
+      <description>What is an add-on? Open-cluster-management has a mechanism to help developers to develop an extension based on the foundation components for the purpose of working with multiple clusters in various aspects. Examples of add-ons includes:
  A tool to collect alert events in the managed cluster, and send to the hub cluster. A network solution that uses the hub to share the network info and establish connection among managed clusters. A tool to spread security policies to multiple clusters.</description>
     </item>
     
@@ -189,8 +189,8 @@ Prerequisite You must meet the following prerequisites to install the applicatio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://open-cluster-management.io/zh/getting-started/integration/policy-framework/</guid>
-      <description>The policy framework provides governance capability to gain visibility, and drive remediation for various security and configuration aspects to help IT administrators meet their requirements.
-   Architecture Prerequisite Install the policy-framework hub components  Install via Clusteradm CLI Install from source   Verify the installation Deploy the synchronization components to the managed cluster(s) What is next     Architecture  The governance policy framework distributes policies to managed clusters and collect results to send back to the hub cluster.</description>
+      <description>The policy framework provides governance capabilities to OCM managed Kubernetes clusters. Policies provide visibility and drive remediation for various security and configuration aspects to help IT administrators meet their requirements.
+   API Concepts  Overview Policy PlacementBinding PolicySet   Architecture Prerequisite Install the policy-framework hub components  Install via Clusteradm CLI Install from source   Verify the installation Deploy the synchronization components to the managed cluster(s) What is next     API Concepts Overview The policy framework has the following API concepts:</description>
     </item>
     
     <item>
@@ -200,7 +200,7 @@ Prerequisite You must meet the following prerequisites to install the applicatio
       
       <guid>http://open-cluster-management.io/zh/getting-started/integration/policy-controllers/</guid>
       <description>After policy framework is installed, you can install the policy controllers to the managed clusters.
-   Prerequisite Install the configuration policy controller What is next  Placement Rule API Placement API Final steps to apply the policy   More policies     Prerequisite You must meet the following prerequisites to install the policy controllers:
+   Prerequisite Install the configuration policy controller What is next  Placement API Placement Rule API Final steps to apply the policy       Prerequisite You must meet the following prerequisites to install the policy controllers:
   Ensure kubectl and kustomize are installed.
   Ensure Golang is installed, if you are planning to install from the source.</description>
     </item>
